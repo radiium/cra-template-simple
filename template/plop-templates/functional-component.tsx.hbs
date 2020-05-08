@@ -1,16 +1,14 @@
 import React, { FC } from 'react';
 import './{{ pascalCase name }}.scss'
 
-interface Props {
+export interface {{ pascalCase name }}Props extends HTMLAttributes<HTMLElement> {
 }
 
-interface State {
-}
-
-
-export const {{ pascalCase name }}: FC = (props: Props) => {
+export const {{ pascalCase name }}: FC<{{ pascalCase name }}Props> = (props: {{ pascalCase name }}Props) => {
     return (
-        <div className="{{ kebabCase name }}-wrapper">hello {{ pascalCase name }}</div>
+    <div className="{{ kebabCase name }}-wrapper" {...props}>
+        hello {{ pascalCase name }}
+    </div>
     );
 };
 

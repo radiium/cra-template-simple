@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './{{ pascalCase name }}.scss'
 
-interface Props {
+export interface {{ pascalCase name }}Props extends HTMLAttributes<HTMLElement> {
 }
 
-interface State {
+export interface {{ pascalCase name }}State {
 }
 
-class {{ pascalCase name }} extends Component<Props, State> {
-    constructor(props: Props) {
+export class {{ pascalCase name }} extends Component<{{ pascalCase name }}Props, {{ pascalCase name }}State> {
+    constructor(props: {{ pascalCase name }}Props) {
         super(props);
         this.state = { };
     }
@@ -21,9 +21,9 @@ class {{ pascalCase name }} extends Component<Props, State> {
 
     render() {
         return (
-            <div className="{{ kebabCase name }}-wrapper">hello {{ pascalCase name }}</div>
+            <div className="{{ kebabCase name }}-wrapper" {...this.props}>
+                hello {{ pascalCase name }}
+            </div>
         );
     }
 }
-
-export default {{ pascalCase name }};
