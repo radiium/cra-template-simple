@@ -1,0 +1,29 @@
+{
+  "package": {
+    "scripts": {
+      "plop:class": "plop class-component -- --name",
+      "plop:functional": "plop functional-component -- --name",
+      "plop:context": "plop context -- --name"
+    },
+    "dependencies": {
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.3.2",
+      "@testing-library/user-event": "^7.1.2",
+      "@types/jest": "^24.0.0",
+      "@types/node": "^12.0.0",
+      "@types/react": "^16.9.0",
+      "@types/react-dom": "^16.9.0",
+      "node-sass": "^4.14.1",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-scripts": "3.4.1",
+      "typescript": "~3.7.2"
+    },
+    "devDependencies": {
+      "plop": "^2.6.0"
+    },
+    "engines": {
+      "node": ">=12.13.0"
+    }
+  }
+}

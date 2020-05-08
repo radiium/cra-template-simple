@@ -1,0 +1,25 @@
+{
+  "name": "cra-template-simple",
+  "version": "0.1.0",
+  "license": "BEER-WARE",
+  "private": true,
+  "description": "Template for Create React App with typescript and plop without redux",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "typescript",
+    "context",
+    "scss",
+    "plop"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radiium/cra-template-typescript-noredux.git"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "main": "template.json"
+}

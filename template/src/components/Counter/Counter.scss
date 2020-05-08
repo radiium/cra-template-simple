@@ -1,0 +1,21 @@
+.counter-wrapper {
+    display: flex;
+    align-items: center;
+
+    div {
+        font-size: 2.5rem;
+    }
+
+    .counter-btn {
+        height: 55px;
+        width: 55px;
+        text-align: center;
+        background-color: transparent;
+        color: #ebc4c4;
+        border-radius: 50%;
+        font-size: 2.2rem;
+        padding: 0 15px 7px 15px;
+        margin: 0 20px;
+        cursor: pointer;
+    }
+}
