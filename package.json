@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/radiium/cra-template-typescript-noredux.git"
+    "url": "https://github.com/radiium/cra-template-simple.git"
   },
   "files": [
     "template",
