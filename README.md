@@ -9,5 +9,5 @@ Template for Create React App
 
 ### Usage:
 ```bash
-npx create-react-app my-app --template ssh://git@github.com/radiium/cra-template-simple.git
+npx create-react-app my-app --template git+https://github.com/radiium/cra-template-simple.git
 ```
