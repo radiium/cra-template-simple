@@ -1,17 +1,15 @@
 import React, { FC } from 'react';
+import { Counter } from '../Counter/Counter';
 import logo from '../../logo.svg';
-import Counter from '../Counter/Counter';
+
 import './Layout.scss'
 
-interface Props {
+export interface LayoutProps {
 }
 
-interface State {
-}
-
-export const Layout: FC = (props: Props) => {
+export const Layout: FC<LayoutProps> = (props: LayoutProps) => {
     return (
-        <div className="App">
+        <div className="layout-wrapper" {...props}>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <Counter/>
@@ -19,5 +17,3 @@ export const Layout: FC = (props: Props) => {
         </div>
     );
 };
-
-export default Layout;

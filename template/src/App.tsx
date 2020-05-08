@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
-import Layout from './components/Layout/Layout';
+import { Layout } from './components/Layout/Layout';
+import { CounterProvider } from './contexts/CounterContext';
+
 import './App.scss';
-import { CounterProvider } from './contexts/Counter';
 
 const App: FC = () => {
   return (

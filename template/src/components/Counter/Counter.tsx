@@ -1,22 +1,18 @@
 import React, { FC } from 'react';
-import { useCounterContext } from '../../contexts/Counter';
+import { useCounterContext } from '../../contexts/CounterContext';
+
 import './Counter.scss'
 
-interface Props {
+export interface CounterProps {
 }
 
-interface State {
-}
-
-export const Counter: FC = (props: Props) => {
+export const Counter: FC<CounterProps> = (props: CounterProps) => {
     const counterContext = useCounterContext();
     return (
-        <div className="counter-wrapper">
+        <div className="counter-wrapper" {...props}>
             <button className="counter-btn" onClick={counterContext.decrement}>-</button>
-            <div>Counter: {counterContext.getValue()}</div>
+            <div>Counter: {counterContext.getCount()}</div>
             <button className="counter-btn" onClick={counterContext.increment}>+</button>
         </div>
     );
 };
-
-export default Counter;

@@ -12,7 +12,7 @@ export interface {{ pascalCase name }}Actions {
     set: (state: {{ pascalCase name }}State) => void;
 }
 
-const initialState: {{ pascalCase name }}State = {}
+export const initialState: {{ pascalCase name }}State = {}
 
 const {{ pascalCase name }}Context = createContext<{{ pascalCase name }}State>(initialState);
 
